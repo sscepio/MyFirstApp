@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Кинопоиск</string>
     <string name="titleapp">titleApp</string>
     <string name="titleApp">Введите название фильма</string>
     <string name="properties">Описание фильма</string>

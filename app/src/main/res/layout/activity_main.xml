@@ -6,13 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft2"
+                android:layout_marginTop="@dimen/layout_marginTop1"
+                android:layout_weight="1"
+                android:text="@string/titleApp"
+                android:textColor="@color/textColor1"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="@dimen/textInput"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:hintEnabled="false">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_marginLeft"
+                    android:hint="@string/hintSearch"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:paddingTop="@dimen/paddingTop" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft1"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/paddingLeft1"
+                android:text="@string/search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLeft3"
+            android:layout_marginTop="@dimen/marginTop3"
+            android:text="@string/properties" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
