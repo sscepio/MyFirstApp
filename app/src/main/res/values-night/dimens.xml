@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textInput">286sp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="paddingTop">5dp</dimen>
+    <dimen name="layout_marginLeft1">10dp</dimen>
+    <dimen name="paddingLeft1">10dp</dimen>
+    <dimen name="layout_marginLeft2">10dp</dimen>
+    <dimen name="layout_marginTop1">10dp</dimen>
+    <dimen name="layout_marginLeft3">20dp</dimen>
+    <dimen name="marginTop3">20dp</dimen>
+</resources>
